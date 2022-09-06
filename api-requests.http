@@ -1,0 +1,17 @@
+### Add new account
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+{
+  "username": "arthur",
+  "name": "Arthur",
+  "email": "me@mad4n7.com",
+  "dateOfBirth": "1997-03-05"
+}
+
+### Delete account
+DELETE http://localhost:8080/api/v1/accounts/2
+
+### Update account
+PUT http://localhost:8080/api/v1/accounts/2?username=jack
+Content-Type: application/json
